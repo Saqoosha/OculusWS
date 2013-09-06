@@ -1,0 +1,489 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		293F946317D99C580041339C /* libovr.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 293F946217D99C580041339C /* libovr.a */; };
+		293F947917D99C810041339C /* json_internalarray.inl in Resources */ = {isa = PBXBuildFile; fileRef = 293F947117D99C810041339C /* json_internalarray.inl */; };
+		293F947A17D99C810041339C /* json_internalmap.inl in Resources */ = {isa = PBXBuildFile; fileRef = 293F947217D99C810041339C /* json_internalmap.inl */; };
+		293F947B17D99C810041339C /* json_reader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 293F947317D99C810041339C /* json_reader.cpp */; };
+		293F947C17D99C810041339C /* json_value.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 293F947517D99C810041339C /* json_value.cpp */; };
+		293F947D17D99C810041339C /* json_valueiterator.inl in Resources */ = {isa = PBXBuildFile; fileRef = 293F947617D99C810041339C /* json_valueiterator.inl */; };
+		293F947E17D99C810041339C /* json_writer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 293F947717D99C810041339C /* json_writer.cpp */; };
+		293F947F17D99C810041339C /* sconscript in Resources */ = {isa = PBXBuildFile; fileRef = 293F947817D99C810041339C /* sconscript */; };
+		293F948317D99C940041339C /* libwebsockets.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 293F948117D99C940041339C /* libwebsockets.a */; };
+		295BD27417C7038E00407956 /* Oculus.icns in Resources */ = {isa = PBXBuildFile; fileRef = 295BD27317C7038E00407956 /* Oculus.icns */; };
+		2997598517C6461E00C0B9F8 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2997598417C6461E00C0B9F8 /* Cocoa.framework */; };
+		2997598F17C6461E00C0B9F8 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2997598D17C6461E00C0B9F8 /* InfoPlist.strings */; };
+		2997599117C6461E00C0B9F8 /* main.mm in Sources */ = {isa = PBXBuildFile; fileRef = 2997599017C6461E00C0B9F8 /* main.mm */; };
+		2997599517C6461E00C0B9F8 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 2997599317C6461E00C0B9F8 /* Credits.rtf */; };
+		2997599817C6461E00C0B9F8 /* AppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = 2997599717C6461E00C0B9F8 /* AppDelegate.mm */; };
+		2997599B17C6461F00C0B9F8 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2997599917C6461F00C0B9F8 /* MainMenu.xib */; };
+		299759A817C646A900C0B9F8 /* IOKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 299759A717C646A900C0B9F8 /* IOKit.framework */; };
+		299759AF17C64D3400C0B9F8 /* SensorMain.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 299759AD17C64D3400C0B9F8 /* SensorMain.cpp */; };
+		299759B217C6570800C0B9F8 /* WebSocketServer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 299759B017C6570800C0B9F8 /* WebSocketServer.cpp */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		293F946017D99C580041339C /* OVR.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OVR.h; sourceTree = "<group>"; };
+		293F946117D99C580041339C /* OVRVersion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OVRVersion.h; sourceTree = "<group>"; };
+		293F946217D99C580041339C /* libovr.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libovr.a; sourceTree = "<group>"; };
+		293F946717D99C810041339C /* autolink.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = autolink.h; sourceTree = "<group>"; };
+		293F946817D99C810041339C /* config.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = config.h; sourceTree = "<group>"; };
+		293F946917D99C810041339C /* features.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = features.h; sourceTree = "<group>"; };
+		293F946A17D99C810041339C /* forwards.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = forwards.h; sourceTree = "<group>"; };
+		293F946B17D99C810041339C /* json.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = json.h; sourceTree = "<group>"; };
+		293F946C17D99C810041339C /* reader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = reader.h; sourceTree = "<group>"; };
+		293F946D17D99C810041339C /* value.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = value.h; sourceTree = "<group>"; };
+		293F946E17D99C810041339C /* writer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = writer.h; sourceTree = "<group>"; };
+		293F947017D99C810041339C /* json_batchallocator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = json_batchallocator.h; sourceTree = "<group>"; };
+		293F947117D99C810041339C /* json_internalarray.inl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = json_internalarray.inl; sourceTree = "<group>"; };
+		293F947217D99C810041339C /* json_internalmap.inl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = json_internalmap.inl; sourceTree = "<group>"; };
+		293F947317D99C810041339C /* json_reader.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = json_reader.cpp; sourceTree = "<group>"; };
+		293F947417D99C810041339C /* json_tool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = json_tool.h; sourceTree = "<group>"; };
+		293F947517D99C810041339C /* json_value.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = json_value.cpp; sourceTree = "<group>"; };
+		293F947617D99C810041339C /* json_valueiterator.inl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = json_valueiterator.inl; sourceTree = "<group>"; };
+		293F947717D99C810041339C /* json_writer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = json_writer.cpp; sourceTree = "<group>"; };
+		293F947817D99C810041339C /* sconscript */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = sconscript; sourceTree = "<group>"; };
+		293F948117D99C940041339C /* libwebsockets.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libwebsockets.a; sourceTree = "<group>"; };
+		293F948217D99C940041339C /* libwebsockets.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = libwebsockets.h; sourceTree = "<group>"; };
+		295BD27317C7038E00407956 /* Oculus.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; name = Oculus.icns; path = ../Oculus.icns; sourceTree = "<group>"; };
+		2997598117C6461E00C0B9F8 /* OculusWSDebug.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OculusWSDebug.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2997598417C6461E00C0B9F8 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		2997598717C6461E00C0B9F8 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		2997598817C6461E00C0B9F8 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		2997598917C6461E00C0B9F8 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		2997598C17C6461E00C0B9F8 /* OculusWS-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "OculusWS-Info.plist"; sourceTree = "<group>"; };
+		2997598E17C6461E00C0B9F8 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		2997599017C6461E00C0B9F8 /* main.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = main.mm; sourceTree = "<group>"; };
+		2997599217C6461E00C0B9F8 /* OculusWS-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "OculusWS-Prefix.pch"; sourceTree = "<group>"; };
+		2997599417C6461E00C0B9F8 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
+		2997599617C6461E00C0B9F8 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		2997599717C6461E00C0B9F8 /* AppDelegate.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = AppDelegate.mm; sourceTree = "<group>"; };
+		2997599A17C6461F00C0B9F8 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		299759A717C646A900C0B9F8 /* IOKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IOKit.framework; path = System/Library/Frameworks/IOKit.framework; sourceTree = SDKROOT; };
+		299759AD17C64D3400C0B9F8 /* SensorMain.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SensorMain.cpp; sourceTree = "<group>"; };
+		299759AE17C64D3400C0B9F8 /* SensorMain.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SensorMain.h; sourceTree = "<group>"; };
+		299759B017C6570800C0B9F8 /* WebSocketServer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = WebSocketServer.cpp; sourceTree = "<group>"; };
+		299759B117C6570800C0B9F8 /* WebSocketServer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebSocketServer.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2997597E17C6461E00C0B9F8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				299759A817C646A900C0B9F8 /* IOKit.framework in Frameworks */,
+				2997598517C6461E00C0B9F8 /* Cocoa.framework in Frameworks */,
+				293F946317D99C580041339C /* libovr.a in Frameworks */,
+				293F948317D99C940041339C /* libwebsockets.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		293F945E17D99C580041339C /* LibOVR */ = {
+			isa = PBXGroup;
+			children = (
+				293F945F17D99C580041339C /* Include */,
+				293F946217D99C580041339C /* libovr.a */,
+			);
+			path = LibOVR;
+			sourceTree = "<group>";
+		};
+		293F945F17D99C580041339C /* Include */ = {
+			isa = PBXGroup;
+			children = (
+				293F946017D99C580041339C /* OVR.h */,
+				293F946117D99C580041339C /* OVRVersion.h */,
+			);
+			path = Include;
+			sourceTree = "<group>";
+		};
+		293F946417D99C810041339C /* jsoncpp */ = {
+			isa = PBXGroup;
+			children = (
+				293F946517D99C810041339C /* include */,
+				293F946F17D99C810041339C /* lib_json */,
+			);
+			path = jsoncpp;
+			sourceTree = "<group>";
+		};
+		293F946517D99C810041339C /* include */ = {
+			isa = PBXGroup;
+			children = (
+				293F946617D99C810041339C /* json */,
+			);
+			path = include;
+			sourceTree = "<group>";
+		};
+		293F946617D99C810041339C /* json */ = {
+			isa = PBXGroup;
+			children = (
+				293F946717D99C810041339C /* autolink.h */,
+				293F946817D99C810041339C /* config.h */,
+				293F946917D99C810041339C /* features.h */,
+				293F946A17D99C810041339C /* forwards.h */,
+				293F946B17D99C810041339C /* json.h */,
+				293F946C17D99C810041339C /* reader.h */,
+				293F946D17D99C810041339C /* value.h */,
+				293F946E17D99C810041339C /* writer.h */,
+			);
+			path = json;
+			sourceTree = "<group>";
+		};
+		293F946F17D99C810041339C /* lib_json */ = {
+			isa = PBXGroup;
+			children = (
+				293F947017D99C810041339C /* json_batchallocator.h */,
+				293F947117D99C810041339C /* json_internalarray.inl */,
+				293F947217D99C810041339C /* json_internalmap.inl */,
+				293F947317D99C810041339C /* json_reader.cpp */,
+				293F947417D99C810041339C /* json_tool.h */,
+				293F947517D99C810041339C /* json_value.cpp */,
+				293F947617D99C810041339C /* json_valueiterator.inl */,
+				293F947717D99C810041339C /* json_writer.cpp */,
+				293F947817D99C810041339C /* sconscript */,
+			);
+			path = lib_json;
+			sourceTree = "<group>";
+		};
+		293F948017D99C940041339C /* libwebsockets */ = {
+			isa = PBXGroup;
+			children = (
+				293F948117D99C940041339C /* libwebsockets.a */,
+				293F948217D99C940041339C /* libwebsockets.h */,
+			);
+			path = libwebsockets;
+			sourceTree = "<group>";
+		};
+		293F948517D99F440041339C /* Libraries */ = {
+			isa = PBXGroup;
+			children = (
+				293F948017D99C940041339C /* libwebsockets */,
+				293F946417D99C810041339C /* jsoncpp */,
+				293F945E17D99C580041339C /* LibOVR */,
+			);
+			name = Libraries;
+			sourceTree = "<group>";
+		};
+		2997597817C6461E00C0B9F8 = {
+			isa = PBXGroup;
+			children = (
+				2997598A17C6461E00C0B9F8 /* OculusWS */,
+				293F948517D99F440041339C /* Libraries */,
+				2997598317C6461E00C0B9F8 /* Frameworks */,
+				2997598217C6461E00C0B9F8 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		2997598217C6461E00C0B9F8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2997598117C6461E00C0B9F8 /* OculusWSDebug.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2997598317C6461E00C0B9F8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				299759A717C646A900C0B9F8 /* IOKit.framework */,
+				2997598417C6461E00C0B9F8 /* Cocoa.framework */,
+				2997598617C6461E00C0B9F8 /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		2997598617C6461E00C0B9F8 /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2997598717C6461E00C0B9F8 /* AppKit.framework */,
+				2997598817C6461E00C0B9F8 /* CoreData.framework */,
+				2997598917C6461E00C0B9F8 /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		2997598A17C6461E00C0B9F8 /* OculusWS */ = {
+			isa = PBXGroup;
+			children = (
+				2997599617C6461E00C0B9F8 /* AppDelegate.h */,
+				2997599717C6461E00C0B9F8 /* AppDelegate.mm */,
+				2997599917C6461F00C0B9F8 /* MainMenu.xib */,
+				299759AD17C64D3400C0B9F8 /* SensorMain.cpp */,
+				299759AE17C64D3400C0B9F8 /* SensorMain.h */,
+				299759B017C6570800C0B9F8 /* WebSocketServer.cpp */,
+				299759B117C6570800C0B9F8 /* WebSocketServer.h */,
+				2997598B17C6461E00C0B9F8 /* Supporting Files */,
+			);
+			path = OculusWS;
+			sourceTree = "<group>";
+		};
+		2997598B17C6461E00C0B9F8 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				295BD27317C7038E00407956 /* Oculus.icns */,
+				2997598C17C6461E00C0B9F8 /* OculusWS-Info.plist */,
+				2997598D17C6461E00C0B9F8 /* InfoPlist.strings */,
+				2997599017C6461E00C0B9F8 /* main.mm */,
+				2997599217C6461E00C0B9F8 /* OculusWS-Prefix.pch */,
+				2997599317C6461E00C0B9F8 /* Credits.rtf */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2997598017C6461E00C0B9F8 /* OculusWS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2997599E17C6461F00C0B9F8 /* Build configuration list for PBXNativeTarget "OculusWS" */;
+			buildPhases = (
+				2997597D17C6461E00C0B9F8 /* Sources */,
+				2997597E17C6461E00C0B9F8 /* Frameworks */,
+				2997597F17C6461E00C0B9F8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = OculusWS;
+			productName = OculusWS;
+			productReference = 2997598117C6461E00C0B9F8 /* OculusWSDebug.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2997597917C6461E00C0B9F8 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = Saqoosha;
+			};
+			buildConfigurationList = 2997597C17C6461E00C0B9F8 /* Build configuration list for PBXProject "OculusWS" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 2997597817C6461E00C0B9F8;
+			productRefGroup = 2997598217C6461E00C0B9F8 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2997598017C6461E00C0B9F8 /* OculusWS */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2997597F17C6461E00C0B9F8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2997598F17C6461E00C0B9F8 /* InfoPlist.strings in Resources */,
+				2997599517C6461E00C0B9F8 /* Credits.rtf in Resources */,
+				2997599B17C6461F00C0B9F8 /* MainMenu.xib in Resources */,
+				295BD27417C7038E00407956 /* Oculus.icns in Resources */,
+				293F947917D99C810041339C /* json_internalarray.inl in Resources */,
+				293F947A17D99C810041339C /* json_internalmap.inl in Resources */,
+				293F947D17D99C810041339C /* json_valueiterator.inl in Resources */,
+				293F947F17D99C810041339C /* sconscript in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2997597D17C6461E00C0B9F8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2997599117C6461E00C0B9F8 /* main.mm in Sources */,
+				2997599817C6461E00C0B9F8 /* AppDelegate.mm in Sources */,
+				299759AF17C64D3400C0B9F8 /* SensorMain.cpp in Sources */,
+				299759B217C6570800C0B9F8 /* WebSocketServer.cpp in Sources */,
+				293F947B17D99C810041339C /* json_reader.cpp in Sources */,
+				293F947C17D99C810041339C /* json_value.cpp in Sources */,
+				293F947E17D99C810041339C /* json_writer.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		2997598D17C6461E00C0B9F8 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2997598E17C6461E00C0B9F8 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		2997599317C6461E00C0B9F8 /* Credits.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2997599417C6461E00C0B9F8 /* en */,
+			);
+			name = Credits.rtf;
+			sourceTree = "<group>";
+		};
+		2997599917C6461F00C0B9F8 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2997599A17C6461F00C0B9F8 /* en */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		2997599C17C6461F00C0B9F8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		2997599D17C6461F00C0B9F8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		2997599F17C6461F00C0B9F8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = "$(SRCROOT)/bin/";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "OculusWS/OculusWS-Prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					/usr/local/include,
+					"\"$(SRCROOT)/jsoncpp/include\"",
+					"\"$(SRCROOT)/LibOVR/include\"",
+				);
+				INFOPLIST_FILE = "OculusWS/OculusWS-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/LibOVR\"",
+					"\"$(SRCROOT)/libwebsockets\"",
+				);
+				OTHER_LDFLAGS = (
+					"-lssl",
+					"-lz",
+					"-lcrypto",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)Debug";
+				USER_HEADER_SEARCH_PATHS = "";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		299759A017C6461F00C0B9F8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = "$(SRCROOT)/bin/";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "OculusWS/OculusWS-Prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					/usr/local/include,
+					"\"$(SRCROOT)/jsoncpp/include\"",
+					"\"$(SRCROOT)/LibOVR/include\"",
+				);
+				INFOPLIST_FILE = "OculusWS/OculusWS-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/LibOVR\"",
+					"\"$(SRCROOT)/libwebsockets\"",
+				);
+				OTHER_LDFLAGS = (
+					"-lssl",
+					"-lz",
+					"-lcrypto",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = "";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2997597C17C6461E00C0B9F8 /* Build configuration list for PBXProject "OculusWS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2997599C17C6461F00C0B9F8 /* Debug */,
+				2997599D17C6461F00C0B9F8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2997599E17C6461F00C0B9F8 /* Build configuration list for PBXNativeTarget "OculusWS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2997599F17C6461F00C0B9F8 /* Debug */,
+				299759A017C6461F00C0B9F8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 2997597917C6461E00C0B9F8 /* Project object */;
+}
