@@ -19,12 +19,7 @@
 {
 //  NSLog([[NSBundle mainBundle] bundlePath]);
   running = NO;
-  [[NSUserDefaults standardUserDefaults] registerDefaults:@{
-    @"webServer": @"3000",
-    @"webSocketServer": @"7681",
-    @"oscReceiver": @"8111",
-    @"oscSender": @"8000"
-   }];
+  [[NSUserDefaults standardUserDefaults] registerDefaults:@{@"serverPort": @"7681"}];
 }
 
 - (void)dealloc
@@ -66,7 +61,7 @@
   {
     NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
     socketServer_ = new WebSocketServer();
-    socketServer_->start([[defaults objectForKey:@"webSocketServer"] intValue]);
+    socketServer_->start([[defaults objectForKey:@"serverPort"] intValue]);
     sensor_ = new SensorMain(socketServer_);
     if (sensor_->running())
     {
